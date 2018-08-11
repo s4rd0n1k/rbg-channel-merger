@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Image Channel Merger v1.0</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+	<h3>Images successfully merged!</h3>
+	<img src={{ image }}/>
+	<form method=post enctype=multipart/form-data>
+		<button name="download" type="submit">Download Image</button>
+	</form>
+</body>
+</html>

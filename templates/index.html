@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>RGB Channel Merger v2.0</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+	<span class="heading">
+		<h2>RGB Channel Merger v2.0</h2>
+		<a href="https://github.com/s4rd0n1k"> > a s4rd0n1k software project < </a>
+	</span>
+	<main>
+		<form method=post enctype=multipart/form-data>
+			<span class="imgblock"><label>Red spectrum image:</label><br/><input type=file name=redf></span>
+			<span class="imgblock"><label>Green spectrum image:</label><br/><input type=file name=greenf></span>
+			<span class="imgblock"><label>Blue spectrum image:</label><br/><input type=file name=bluef></span>
+			</br></br></br>
+			<input type=submit value="Upload Files">
+		</form>
+	</main>
+</body>
+</html>
