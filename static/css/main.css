@@ -5,6 +5,12 @@ html, body {
 	padding: 0px;
 	margin: 0px;
 }
+input, button {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	color: #FFFFFF;
+}
 main {
 	margin-top: 10px;
 	text-align: center;
@@ -17,18 +23,35 @@ main {
 }
 .heading a {
 	color: #FFFFFF;
+	font-style: none;
+	text-decoration: none;
 }
 .heading h2 {
 	padding: 0px;
 	margin: 0px;
 	border: 0px;
 }
-.imgblock {
+.button_standard {
+	margin-top: 20px;
+	margin: 10px;
 	display: inline-block;
-	padding: 10px;
+	position: relative;
+	background-color: #303030;
+	-o-transition: 0.15s;
+	-moz-transition: 0.15s;
+	-webkit-transition: 0.15s;
+	transition: 0.15s;
 	text-align: left;
-	background-color: #606060;
+	padding: 10px;
 }
-.imgblock:hover {
-	background-color: #484848;
+.button_standard:hover {
+	background-color: #404040;
+	cursor: pointer;
+}
+
+a.outlink {
+	text-decoration: underline;
+}
+a.outlink:hover {
+	color: gold;
 }

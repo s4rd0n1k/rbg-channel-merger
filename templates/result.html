@@ -1,14 +1,8 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<title>Image Channel Merger v1.0</title>
-	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}">
-</head>
-<body>
-	<h3>Images successfully merged!</h3>
-	<img src={{ image }}/>
+{% extends 'base.html' %}
+{% block content %}
+	<p> Image channels merged successfully.<br/>Preview:</p>
+	<img width=100 height=100 src={{ image }}/>
 	<form method=post enctype=multipart/form-data>
-		<button name="download" type="submit">Download Image</button>
+		<button  class="button_standard" name="download" type="submit">Download Image</button>
 	</form>
-</body>
-</html>
+{% endblock %}

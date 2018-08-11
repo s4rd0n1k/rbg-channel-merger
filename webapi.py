@@ -14,6 +14,7 @@ def upload():
     timestamp = str(timestamp).replace('.', '')
     if request.method == 'POST':
         print(str(len(request.files)))
+        print(request.files)
         if 'redf' not in request.files or 'greenf' not in request.files or 'bluef' not in request.files:
             flash('Please upload all files before submitting!')
             print("error 1")
